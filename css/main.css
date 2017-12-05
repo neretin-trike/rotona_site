@@ -4,7 +4,7 @@ html{
 
 body{
     font-family: 'Poppins';
-    color: #141414;
+    color: #222222;
     font-size: 1.4rem;
 
     /* display: flex; */
@@ -132,7 +132,7 @@ button:after{
     HEADER
 ---------------------------*/
 
-header{
+body > header{
     margin: 2.4rem 0;
     position: relative;
     z-index: 999;
@@ -372,6 +372,20 @@ header .menu a.selected{
     PROJECTS
 ---------------------------*/
 
+#projects{
+    padding-top: 5.5rem;
+    padding-bottom: 9.5rem;
+
+    border-bottom: 0.1rem solid #e5e5e5;
+
+    position: relative;
+
+    background-image: url(../images/project_background.jpg);    
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 15% 50%;
+}
+
 #projects .container{
     grid-row-gap: 0;
     grid-template-rows: repeat(3, auto);
@@ -380,12 +394,50 @@ header .menu a.selected{
 #projects header{
     grid-column: 5/9;
     grid-row: 1/2;
+
+    padding: 0 2.5rem;
+    text-align: center;
 }    
 
-#projects article{
+#projects header h2{
+    font-size: 3rem;
+
+    margin-bottom: 2rem;
+}    
+
+#projects header p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #999999;
+}    
+
+#projects article.content{
     grid-column: 8/13;
     grid-row: 2/3;
+
+    margin-top: 16.8rem;
+    margin-bottom: 14.6rem;
 }    
+
+#projects article.content h3{
+    font-size: 3.6rem;
+    line-height: 4.8rem;
+}    
+
+#projects article.content p{
+    line-height: 2.4rem;
+    color: #444444;
+
+    margin: 4.4rem 0;
+}    
+
+#projects button{
+    color: #222222;
+}
+
+#projects button:after{
+    background-position: center -2rem;
+}
 
 #projects nav{
     grid-column: 6/8;
@@ -393,7 +445,23 @@ header .menu a.selected{
 
     display: grid;
     grid-auto-flow: column;
+    grid-gap: 1.5rem;
+    align-items: flex-end;
+    margin: 0 auto;
 }    
+    
+#projects nav .item{
+    width: 0.5rem;
+    height: 4.2rem;
+    background-color: #dcdcdc;
+}    
+
+#projects nav .item.selected{
+    height: 6rem;
+    background-color: #913bbe;
+}    
+
+
 
 /*--------------------------
     SERVICE
