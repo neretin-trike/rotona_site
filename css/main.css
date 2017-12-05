@@ -124,9 +124,9 @@ button:after{
     background-position: center 0;
 }    
 
-button:hover:after{
+/* button:hover:after{
     background-position: center -2rem;
-}    
+}     */
 
 /*--------------------------
     HEADER
@@ -170,7 +170,7 @@ header .menu a.selected{
     background-image: url(../images/home_background.jpg);    
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 75%;
+    background-position: center;
 
     padding-top: 39.2rem;
     padding-bottom: 32.6rem;
@@ -222,10 +222,55 @@ header .menu a.selected{
 /*--------------------------
     ABOUT US
 ---------------------------*/
+#about-us{
+    position: relative;
+    
+    background-image: url(../images/about_background.jpg);    
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: 25% 200%;
+
+    padding-top: 20.5rem;
+    padding-bottom: 18.5rem;
+}
 
 #about-us .column{
     grid-column: 8/13;
+
 }
+
+#about-us .column h2{
+    color: #913bbe;
+
+    font-size: 2.4rem;
+    text-transform: uppercase;
+}    
+
+#about-us .column h1{
+    color: #222222;
+    
+    font-size: 4.8rem;
+    line-height: 6rem;
+}    
+
+#about-us .column p{
+    color: #444444;
+
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+
+    margin-top: 2.6rem;
+    margin-bottom: 4.8rem;
+}  
+
+#about-us .column button{
+    color: #222222;
+}
+
+#about-us .column button:after{
+    background-position: center -2rem;
+}
+    
 
 /*--------------------------
     FEATURES
@@ -237,6 +282,7 @@ header .menu a.selected{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-gap: 3rem;
+
 }
 
 /*--------------------------
