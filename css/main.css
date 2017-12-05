@@ -18,7 +18,7 @@ body{
 
 *{
     box-sizing: border-box;
-    border: 0.1rem solid #a2a1bf;
+    /* border: 0.1rem solid #a2a1bf; */
 }
 
 figure{
@@ -702,6 +702,10 @@ header .menu a.selected{
 /*--------------------------
     LATEST NEWS
 ---------------------------*/
+#latest-news{
+    padding-top: 4rem;
+    padding-bottom: 12rem;
+}
 
 #latest-news .container{
     grid-row-gap: 0;
@@ -711,7 +715,21 @@ header .menu a.selected{
 #latest-news header{
     grid-column: 5/9;
     grid-row: 1/2;
+
+    text-align: center;
 }    
+
+#latest-news header h2{
+    font-size: 3rem;
+
+    margin-bottom: 2rem;
+}    
+
+#latest-news header p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #999999;
+}  
 
 #latest-news article.news{
     grid-column: 1/13;
@@ -719,12 +737,44 @@ header .menu a.selected{
 
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-gap: 3rem;
+
+    margin-top: 6.8rem;
 }   
 
 #latest-news article.news img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+
+    margin-bottom: 1rem;
+}    
+
+#latest-news article.news figcaption h3{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}    
+
+#latest-news article.news figcaption p{
+    line-height: 1.75;
+
+    margin: 2rem 0;
+}    
+
+#latest-news article.news footer{
+    border-top: 0.1rem solid #e5e5e5;
+
+    padding-top: 2.5rem;
+}    
+
+#latest-news article.news footer time{
+    color: #999999;
+    font-family: "Open Sans";
+    font-weight: 400;
+}
+
+#latest-news article.news footer a{
+    float: right;
 }    
 
 /*--------------------------
