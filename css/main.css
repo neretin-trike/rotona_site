@@ -44,7 +44,7 @@ a{
     color: black;
 }
 
-h1, h2{
+h1, h2, h3{
     margin: 0;
 }
 
@@ -276,6 +276,13 @@ header .menu a.selected{
     FEATURES
 ---------------------------*/
 
+#features{
+    border-top: 0.1rem solid #e5e5e5;
+
+    padding-top: 9.2rem;
+    padding-bottom: 9.8rem;
+}
+
 #features .column{
     grid-column: 1/13;
     
@@ -283,7 +290,38 @@ header .menu a.selected{
     grid-template-columns: repeat(3,1fr);
     grid-gap: 3rem;
 
+    text-align: center;
 }
+
+#features .column .feature-item .icon{
+    width: 8.0rem;
+    height: 5.8rem;
+
+    margin: 0 auto;
+
+    position: relative;
+
+    background-image: url(../images/features/icon_bg.PNG);
+    background-repeat: no-repeat;
+    background-position: 100% center;
+}    
+
+#features .column .feature-item img{
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: auto;
+}    
+
+#features .column .feature-item h3{
+    font-size: 2.4rem;
+    line-height: 6.0rem;
+    color: #222222;
+}
+
+#features .column .feature-item p{
+    line-height: 2.4rem;
+    color: #444444;
+}    
 
 /*--------------------------
     FACTS
