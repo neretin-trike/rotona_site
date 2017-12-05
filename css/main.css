@@ -3,7 +3,7 @@ html{
 }
 
 body{
-    font-family: 'Poppins';
+    font-family: 'Open Sans';
     color: #141414;
     font-size: 1.4rem;
 
@@ -63,7 +63,7 @@ p{
 }
 
 main{
-    /* margin-top: -18.0rem; */
+    margin-top: -13.2rem;
 }
 
 .container{
@@ -113,6 +113,12 @@ main{
     HEADER
 ---------------------------*/
 
+header{
+    margin: 2.4rem 0;
+    position: relative;
+    z-index: 999;
+}
+
 header .logo{
     grid-column: 1 /span 4;
 }    
@@ -123,11 +129,33 @@ header .menu{
     align-items: center;
 
     grid-column: 7 / span 6;
+
+    font-weight: 700;
+    text-align: center;
 }
+
+header .menu a{
+    color: white;
+}   
+
+header .menu a.selected{
+    color: #913bbe;
+}    
 
 /*--------------------------
     HOME
 ---------------------------*/
+#home{
+    position: relative;
+    
+    background-image: url(../images/home_background.jpg);    
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center 75%;
+
+    padding-top: 26.0rem;
+    padding-bottom: 32.6rem;
+}
 
 #home .column{
     grid-column: 1/8;
