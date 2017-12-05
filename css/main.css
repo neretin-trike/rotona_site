@@ -7,12 +7,8 @@ body{
     color: #222222;
     font-size: 1.4rem;
 
-    /* display: flex; */
-    /* flex-direction: column; */
-    /* align-items: center; */
-
     position: relative;
-    max-width: 192.0rem;
+    /* max-width: 192.0rem; */
     margin: 0 auto;
 }
 
@@ -151,7 +147,7 @@ header .menu{
     grid-column: 7 / span 6;
 
     font-weight: 700;
-    text-align: center;
+    text-align: right;
 }
 
 header .menu a{
@@ -780,8 +776,21 @@ header .menu a.selected{
 /*--------------------------
     FOOTER
 ---------------------------*/
+
+body > footer{
+    padding-top: 28.6rem;
+    padding-bottom: 6rem;
+    
+    position: relative;
+    
+    background-image: url(../images/footer_background.png);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 footer .container{
-    grid-row-gap: 0;
+    grid-row-gap: 11.6rem;
     grid-template-rows: repeat(2, auto);
 
     align-items: flex-end;
@@ -789,30 +798,103 @@ footer .container{
 
 footer .container .about{
     grid-row: 1/2;
-    grid-column: 1/6;
+    grid-column: 1/7;
+
+    padding-right: 4.5rem;
 }
+
+footer .container .about h3{
+    font-size: 2.4rem;
+    margin-bottom: 4.8rem;
+}    
+
+footer .container .about h3{
+    color: #444444;
+    line-height: 2.4rem;
+}    
 
 footer .container .subscribe{
     grid-row: 1/2;
     grid-column: 7/11;
+
+    position: relative;
 }
+
+
+footer .container .subscribe input[type="text"]{
+    padding: 1.6rem 0;
+    
+    width: 100%;
+    padding-right: 13rem;
+    background-color: transparent;
+
+    border-bottom: 0.1rem solid #999999;
+}    
+
+footer .container .subscribe input[type="submit"]{
+    padding: 1.2rem 2.4rem;
+    
+    top: 0.5rem;
+    right: 0;
+    position: absolute;
+
+    background-color: #913bbe;
+    color: white;
+    font-weight: 700;
+}    
 
 footer .container .social-media{
     grid-row: 1/2;
     grid-column: 11/13;
+
+    margin-left: auto;
 }
+
+footer .container .social-media a{
+    display: inline-block;
+    width: 3.5rem;
+    height: 3rem;
+    background-image: url(../images/social_mdeia.PNG);
+    background-repeat: no-repeat;
+}
+    
+footer .container .social-media .facebook{
+    background-position: 1rem center;
+}
+
+footer .container .social-media .twitter{
+    background-position: -2.4rem center;
+}
+
+footer .container .social-media .google{
+    background-position: -7rem center;
+}
+
+footer .container .social-media .linkedin{
+    background-position: -11.4rem center;
+}    
+
 
 footer .container .copyright{
     grid-row: 2/3;
     grid-column: 1/4;
+
+    font-family: "Open Sans";
+    color: #444444;
 }    
 
+footer .container .copyright strong{
+    font-family: "Poppins";
+    color: #222222;
+}
+    
 footer .container .menu{
     grid-row: 2/3;
     grid-column: 8/13;
 
     display: grid;
     grid-auto-flow: column;
-    align-items: center;
-}    
+
+    text-align: right;
+}
     
