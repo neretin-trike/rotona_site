@@ -51,7 +51,6 @@ h1, h2, h3{
 p{
     margin: 0;
     font-family: 'Open Sans';
-    color: #444444;
 }
 
 main{
@@ -660,21 +659,44 @@ header .menu a.selected{
     PARTNERS
 ---------------------------*/
 
+#partners{
+    padding: 5rem 0;
+}
+
 #partners .container{
-    justify-content: center;
+    text-align: center;
 
     grid-template-columns: repeat(8,1fr);
     grid-template-rows: repeat(2,1fr);
+
+    grid-gap: 0;
 
 }
 
 #partners figure{
     grid-column: span 2;
+
+    padding: 3rem 0;
+
+    border-right: 0.1rem solid #e5e5e5;
+    border-bottom: 0.1rem solid #e5e5e5;
+}
+
+#partners figure:nth-child(4),
+#partners figure:nth-child(7){
+    border-right: none;
 }
 
 #partners figure:nth-child(5){
     grid-row: 2/3;
     grid-column: 2 /span 2;
+}    
+
+#partners figure:nth-child(5),
+#partners figure:nth-child(6),
+#partners figure:nth-child(7){
+    border-bottom: none;
+    
 }    
 
 /*--------------------------
