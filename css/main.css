@@ -121,9 +121,30 @@ button:after{
     background-position: center 0;
 }    
 
-/* button:hover:after{
-    background-position: center -2rem;
-}     */
+#testimonial header,
+#projects header,
+#service header{
+    grid-column: 5/9;
+    grid-row: 1/2;
+
+    text-align: center;
+}    
+
+#testimonial header h2,
+#projects header h2,
+#service header h2{
+
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}    
+
+#testimonial header p,
+#projects header p,
+#service header p{
+    font-size: 1.6rem;
+    line-height: 3rem;
+    color: #999999;
+}   
 
 /*--------------------------
     HEADER
@@ -161,6 +182,7 @@ header .menu a.selected{
 /*--------------------------
     HOME
 ---------------------------*/
+
 #home{
     position: relative;
     
@@ -219,6 +241,7 @@ header .menu a.selected{
 /*--------------------------
     ABOUT US
 ---------------------------*/
+
 #about-us{
     position: relative;
 
@@ -267,7 +290,6 @@ header .menu a.selected{
     background-position: center -2rem;
 }
     
-
 /*--------------------------
     FEATURES
 ---------------------------*/
@@ -387,25 +409,6 @@ header .menu a.selected{
     grid-template-rows: repeat(3, auto);
 }
 
-#projects header{
-    grid-column: 5/9;
-    grid-row: 1/2;
-
-    text-align: center;
-}    
-
-#projects header h2{
-    font-size: 3rem;
-
-    margin-bottom: 2rem;
-}    
-
-#projects header p{
-    font-size: 1.6rem;
-    line-height: 3rem;
-    color: #999999;
-}    
-
 #projects article.content{
     grid-column: 8/13;
     grid-row: 2/3;
@@ -456,8 +459,6 @@ header .menu a.selected{
     background-color: #913bbe;
 }    
 
-
-
 /*--------------------------
     SERVICE
 ---------------------------*/
@@ -471,25 +472,6 @@ header .menu a.selected{
     grid-row-gap: 0;
     grid-template-rows: repeat(2, auto);
 }
-
-#service header{
-    grid-column: 5/9;
-    grid-row: 1/2;
-
-    text-align: center;
-}    
-
-#service header h2{
-    font-size: 3rem;
-
-    margin-bottom: 2rem;
-}    
-
-#service header p{
-    font-size: 1.6rem;
-    line-height: 3rem;
-    color: #999999;
-}    
 
 #service article.tile{
     grid-column: 1/13;
@@ -590,25 +572,6 @@ header .menu a.selected{
     grid-template-rows: repeat(2, auto);
 }
 
-#testimonial header{
-    grid-column: 5/9;
-    grid-row: 1/2;
-
-    text-align: center;
-}    
-
-#testimonial header h2{
-    font-size: 3rem;
-
-    margin-bottom: 2rem;
-}    
-
-#testimonial header p{
-    font-size: 1.6rem;
-    line-height: 3rem;
-    color: #999999;
-}   
-
 #testimonial article.review{
     grid-column: 1/13;
     grid-row: 2/3;
@@ -633,6 +596,22 @@ header .menu a.selected{
 
 #testimonial article.review blockquote h3{
     font-size: 3.6rem;
+    position: relative;
+}    
+
+#testimonial article.review blockquote h3:after{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: -1.75rem;
+    right: 13.5rem;
+
+    height: 4.2rem;
+    width: 4.2rem;
+
+    background-image: url(../images/quotations.PNG);
+    background-repeat: no-repeat;
+    background-position: center;
 }    
 
 #testimonial article.review blockquote .content{
